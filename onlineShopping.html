@@ -82,7 +82,7 @@ button{
 	 	
 	 	a{
 	color:maroon;
-	font-size: 12px;
+	font-size: 11px;
 }
 
 .pull-right { 
@@ -177,6 +177,20 @@ mark{
       background-color: orange;
     }
     /*end floating button css*/
+    
+    /* Center navbar links horizontally */
+.navbar-nav {
+  float: none;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+}
+
+.navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+ /* Center navbar links horizontally */
 	</style>
 	
  </head>
@@ -204,10 +218,10 @@ mark{
       <ul class="nav navbar-nav">
  <li><a onclick="africaOnlineHome(); color(this)" style="color: orange; background: teal;"><mark>🏡Home</mark></a></li>
         
-        <li><a onclick="color(this);GPT3000();" style="background: teal;" href="#"><mark>🤖GPT-3000</mark></a></li>
+        <li><a onclick="color(this);Gemini();" style="background: teal;" href="#"><mark>🤖Gemini</mark></a></li>
         
         <li class="dropdown">
-          <a onclick="color(this)" style="color: orange; background: teal; border: solid orange 1px; margin-left: 8px;" data-toggle="dropdown" class="dropdown-toggle" href="#"><mark>📄Option<b class="caret"></b></mark></a>
+          <a onclick="color(this)" style="color: orange; background: teal; border: solid orange 1px; " data-toggle="dropdown" class="dropdown-toggle"><mark>📄Option<b class="caret"></b></mark></a>
           
           <ul role="menu" class="dropdown-menu">
             
@@ -1595,7 +1609,7 @@ Salmanda in Lilongwe 2025 <mark style="font-size: 9px;">Facebook link</mark>
 <!--end text modal of details-->
 
 	<!--floating button-->
-	 	<button class="floating-btn" onclick="shareWebsite(); color(this);">↪</button>
+	 	<button class="floating-btn" onclick="Gemini(); color(this);">🤖</button>
 
 	 	  <script>
     function scrollToTop() {
